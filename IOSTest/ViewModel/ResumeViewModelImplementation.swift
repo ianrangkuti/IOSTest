@@ -111,10 +111,10 @@ final class ResumeViewModelImplementation: ResumeViewModel {
   }
   
   func goNextPage() {
-    
+    pagePosition.value = 1
   }
   
   func goBack() {
-    
+    pagePosition.value = -1
   }
 }
