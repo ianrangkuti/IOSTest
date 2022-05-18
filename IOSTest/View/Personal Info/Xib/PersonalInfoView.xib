@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonalInfoViewController" customModule="IOSTest" customModuleProvider="target">
+            <connections>
+                <outlet property="addressTextField" destination="vgT-KH-Cmg" id="uxA-zL-ikg"/>
+                <outlet property="careerObjectiveTextView" destination="1la-nu-do1" id="L6j-9A-QCK"/>
+                <outlet property="emailTextField" destination="p2x-g9-AId" id="2RV-As-LmA"/>
+                <outlet property="nextButton" destination="KNG-S4-zQO" id="TSP-Po-M96"/>
+                <outlet property="phoneNumberTextField" destination="mcr-SF-G9h" id="S7U-yh-joJ"/>
+                <outlet property="progressView" destination="2qM-J1-AYU" id="Ur8-Ic-sHG"/>
+                <outlet property="userNameTextField" destination="doc-J7-Wea" id="oba-Sy-Vto"/>
+                <outlet property="userPictureImageView" destination="lSa-Ez-2gq" id="YEm-yF-9Sa"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FDJ-b3-clF"/>
+                <outlet property="yearOfExperienceTextField" destination="NeD-jk-bci" id="gl6-Dz-I8b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQI-uY-OVF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ke-ci-VlM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="724.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ooi-bt-qbi" userLabel="Personal Info">
+                                    <rect key="frame" x="20" y="20" width="374" height="27.5"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="lSa-Ez-2gq">
+                                    <rect key="frame" x="157" y="77.5" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="lSa-Ez-2gq" secondAttribute="height" multiplier="1:1" id="V6Z-fX-igg"/>
+                                        <constraint firstAttribute="width" constant="100" id="WZS-la-nWu"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3ri-RQ-fxT">
+                                    <rect key="frame" x="20" y="197.5" width="374" height="405"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="doc-J7-Wea" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p2x-g9-AId" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="61" width="374" height="21"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcr-SF-G9h" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="122" width="374" height="21"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Residence Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgT-KH-Cmg" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="183" width="374" height="21"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" textContentType="street-address"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Total Years of experience" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeD-jk-bci" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="244" width="374" height="21"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                        </textField>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Career Objective" translatesAutoresizingMaskIntoConstraints="NO" id="1la-nu-do1">
+                                            <rect key="frame" x="0.0" y="305" width="374" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="qBT-zk-j7F"/>
+                                            </constraints>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNG-S4-zQO">
+                                    <rect key="frame" x="116.5" y="642.5" width="181" height="32"/>
+                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Next">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextButtonTapped:" destination="-1" eventType="touchUpInside" id="SQg-eI-Zck"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="KNG-S4-zQO" firstAttribute="width" secondItem="3Ke-ci-VlM" secondAttribute="height" multiplier="1:4" id="3nx-hb-gt7"/>
+                                <constraint firstItem="lSa-Ez-2gq" firstAttribute="centerX" secondItem="3Ke-ci-VlM" secondAttribute="centerX" id="6Qc-ZS-uKK"/>
+                                <constraint firstAttribute="trailing" secondItem="Ooi-bt-qbi" secondAttribute="trailing" constant="20" id="6Rp-89-frT"/>
+                                <constraint firstItem="KNG-S4-zQO" firstAttribute="centerX" secondItem="3Ke-ci-VlM" secondAttribute="centerX" id="EsF-OP-rUm"/>
+                                <constraint firstItem="3ri-RQ-fxT" firstAttribute="top" secondItem="lSa-Ez-2gq" secondAttribute="bottom" constant="20" id="IVp-zw-ofa"/>
+                                <constraint firstItem="KNG-S4-zQO" firstAttribute="top" secondItem="3ri-RQ-fxT" secondAttribute="bottom" constant="40" id="Qqe-Y3-Ixy"/>
+                                <constraint firstItem="Ooi-bt-qbi" firstAttribute="top" secondItem="3Ke-ci-VlM" secondAttribute="top" constant="20" id="Sct-P9-7XJ"/>
+                                <constraint firstItem="3ri-RQ-fxT" firstAttribute="leading" secondItem="3Ke-ci-VlM" secondAttribute="leading" constant="20" id="eMc-51-1Il"/>
+                                <constraint firstItem="Ooi-bt-qbi" firstAttribute="leading" secondItem="3Ke-ci-VlM" secondAttribute="leading" constant="20" id="gku-zt-grL"/>
+                                <constraint firstAttribute="bottom" secondItem="KNG-S4-zQO" secondAttribute="bottom" constant="50" id="n3U-HU-TXa"/>
+                                <constraint firstItem="lSa-Ez-2gq" firstAttribute="top" secondItem="Ooi-bt-qbi" secondAttribute="bottom" constant="30" id="rNN-PV-lMK"/>
+                                <constraint firstAttribute="trailing" secondItem="3ri-RQ-fxT" secondAttribute="trailing" constant="20" id="sUd-st-pas"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3Ke-ci-VlM" secondAttribute="trailing" id="R5m-7N-7yb"/>
+                        <constraint firstItem="3Ke-ci-VlM" firstAttribute="centerX" secondItem="aQI-uY-OVF" secondAttribute="centerX" id="Wty-jL-Xsy"/>
+                        <constraint firstAttribute="bottom" secondItem="3Ke-ci-VlM" secondAttribute="bottom" id="cVf-lO-c61"/>
+                        <constraint firstItem="3Ke-ci-VlM" firstAttribute="top" secondItem="aQI-uY-OVF" secondAttribute="top" id="gxm-pe-TgA"/>
+                        <constraint firstItem="3Ke-ci-VlM" firstAttribute="leading" secondItem="aQI-uY-OVF" secondAttribute="leading" id="nOI-wP-5ug"/>
+                    </constraints>
+                </scrollView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2qM-J1-AYU">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.12549019607843137" green="0.1254901886" blue="0.1254901886" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aQI-uY-OVF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DMy-ST-rtX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aQI-uY-OVF" secondAttribute="bottom" id="KNE-HZ-LHh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aQI-uY-OVF" secondAttribute="trailing" id="Kg3-7E-uZS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2qM-J1-AYU" secondAttribute="bottom" id="Mjd-VI-3sa"/>
+                <constraint firstItem="2qM-J1-AYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Sdr-1y-IFj"/>
+                <constraint firstItem="2qM-J1-AYU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fuT-ej-7wQ"/>
+                <constraint firstItem="aQI-uY-OVF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uhm-ik-Xu4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2qM-J1-AYU" secondAttribute="trailing" id="yKj-aM-r1o"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="99"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_image" width="48.5" height="48.5"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

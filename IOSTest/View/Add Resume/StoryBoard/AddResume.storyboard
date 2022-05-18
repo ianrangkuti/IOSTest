@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+    </dependencies>
+    <scenes>
+        <!--AddResumePageViewController-->
+        <scene sceneID="klz-Ml-fuQ">
+            <objects>
+                <pageViewController storyboardIdentifier="AddResumePageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="VUW-xS-lcC" userLabel="AddResumePageViewController" customClass="AddResumePageViewController" customModule="IOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Add Resume" id="rTd-Bc-tOL" userLabel="Add Resume">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" id="Qrm-DX-7dS" userLabel="back">
+                            <connections>
+                                <action selector="backButtonTapped:" destination="VUW-xS-lcC" id="1vo-fd-ygB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backBarButton" destination="Qrm-DX-7dS" id="46V-js-3IV"/>
+                    </connections>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1dU-Vv-yYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259" y="-589"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" width="9.5" height="17"/>
+    </resources>
+</document>

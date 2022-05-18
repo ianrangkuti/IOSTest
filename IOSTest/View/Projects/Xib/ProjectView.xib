@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectView" customModule="IOSTest" customModuleProvider="target">
+            <connections>
+                <outlet property="clearButton" destination="Ids-vp-abh" id="cyg-0h-qpt"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="hoF-9Y-iI3"/>
+                <outlet property="smallLabel" destination="gnx-o0-hv6" id="t9F-2z-QBc"/>
+                <outlet property="subTitleLable" destination="r4a-VO-Mjm" id="m49-wz-j4X"/>
+                <outlet property="titleLabel" destination="BGs-R3-t5W" id="Mdm-lH-cH6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGs-R3-t5W">
+                    <rect key="frame" x="10" y="34" width="344" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4a-VO-Mjm">
+                    <rect key="frame" x="10" y="55.5" width="344" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnx-o0-hv6">
+                    <rect key="frame" x="10" y="74.5" width="344" height="28.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-vp-abh">
+                    <rect key="frame" x="380" y="68.5" width="24" height="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title=" " image="xmark.circle.fill"/>
+                    <connections>
+                        <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="dbw-ft-oKi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ids-vp-abh" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="At4-Hu-D81"/>
+                <constraint firstItem="gnx-o0-hv6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="GMf-Yw-ax8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gnx-o0-hv6" secondAttribute="bottom" constant="10" id="KbL-wk-YWp"/>
+                <constraint firstItem="gnx-o0-hv6" firstAttribute="top" secondItem="r4a-VO-Mjm" secondAttribute="bottom" constant="2" id="QRm-Vz-6Kz"/>
+                <constraint firstItem="r4a-VO-Mjm" firstAttribute="top" secondItem="BGs-R3-t5W" secondAttribute="bottom" constant="2" id="RNa-gj-5PU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r4a-VO-Mjm" secondAttribute="trailing" constant="60" id="b5n-yD-IwH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gnx-o0-hv6" secondAttribute="trailing" constant="60" id="c7K-kg-Vea"/>
+                <constraint firstItem="r4a-VO-Mjm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="eBX-WV-134"/>
+                <constraint firstItem="BGs-R3-t5W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="jR8-Xe-Kqb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="BGs-R3-t5W" secondAttribute="top" constant="10" id="liO-5x-OyM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ids-vp-abh" secondAttribute="trailing" constant="10" id="sGV-Il-0eU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BGs-R3-t5W" secondAttribute="trailing" constant="60" id="uE2-uY-1Uo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="291.62946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark.circle.fill" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

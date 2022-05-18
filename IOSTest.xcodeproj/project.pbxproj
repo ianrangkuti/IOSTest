@@ -1,0 +1,971 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CBB371328349BA50025A159 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36AF28349BA40025A159 /* Assets.xcassets */; };
+		3CBB371528349BA50025A159 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36B228349BA40025A159 /* UnderlinedTextField.swift */; };
+		3CBB371628349BA50025A159 /* ResumeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36B428349BA40025A159 /* ResumeViewModel.swift */; };
+		3CBB371728349BA50025A159 /* ResumeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36B728349BA40025A159 /* ResumeRepository.swift */; };
+		3CBB371828349BA50025A159 /* EducationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36B928349BA40025A159 /* EducationDetail.swift */; };
+		3CBB371928349BA50025A159 /* WorkSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36BA28349BA40025A159 /* WorkSummary.swift */; };
+		3CBB371A28349BA50025A159 /* ProjectDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36BB28349BA40025A159 /* ProjectDetail.swift */; };
+		3CBB371B28349BA50025A159 /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36BC28349BA40025A159 /* PersonalDetail.swift */; };
+		3CBB371C28349BA50025A159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36BF28349BA40025A159 /* AppDelegate.swift */; };
+		3CBB371D28349BA50025A159 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36C028349BA40025A159 /* SceneDelegate.swift */; };
+		3CBB371E28349BA50025A159 /* MediaHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36C228349BA40025A159 /* MediaHandler.swift */; };
+		3CBB371F28349BA50025A159 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36C328349BA40025A159 /* Observable.swift */; };
+		3CBB372028349BA50025A159 /* GlobalFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36C428349BA40025A159 /* GlobalFunction.swift */; };
+		3CBB372128349BA50025A159 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36C528349BA40025A159 /* DatabaseManager.swift */; };
+		3CBB372228349BA50025A159 /* PersonalInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36C928349BA40025A159 /* PersonalInfoView.xib */; };
+		3CBB372328349BA50025A159 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36CB28349BA40025A159 /* PersonalInfoViewController.swift */; };
+		3CBB372428349BA50025A159 /* AddResume.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36CE28349BA40025A159 /* AddResume.storyboard */; };
+		3CBB372528349BA50025A159 /* AddResumePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36D028349BA40025A159 /* AddResumePageViewController.swift */; };
+		3CBB372628349BA50025A159 /* ProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36D328349BA40025A159 /* ProjectView.xib */; };
+		3CBB372728349BA50025A159 /* ProjectListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36D428349BA40025A159 /* ProjectListView.xib */; };
+		3CBB372828349BA50025A159 /* AddProjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36D528349BA40025A159 /* AddProjectView.xib */; };
+		3CBB372928349BA50025A159 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36D728349BA40025A159 /* ProjectView.swift */; };
+		3CBB372A28349BA50025A159 /* AddProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36D928349BA40025A159 /* AddProjectViewController.swift */; };
+		3CBB372B28349BA50025A159 /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36DA28349BA40025A159 /* ProjectListViewController.swift */; };
+		3CBB372C28349BA50025A159 /* ResumeHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36DD28349BA40025A159 /* ResumeHeaderTableViewCell.xib */; };
+		3CBB372D28349BA50025A159 /* ResumeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36DF28349BA40025A159 /* ResumeView.storyboard */; };
+		3CBB372E28349BA50025A159 /* ProjectDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E128349BA50025A159 /* ProjectDetailTableViewCell.swift */; };
+		3CBB372F28349BA50025A159 /* ResumeHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E228349BA50025A159 /* ResumeHeaderTableViewCell.swift */; };
+		3CBB373028349BA50025A159 /* PersonalInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E328349BA50025A159 /* PersonalInfoTableViewCell.swift */; };
+		3CBB373128349BA50025A159 /* WorkSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E428349BA50025A159 /* WorkSummaryTableViewCell.swift */; };
+		3CBB373228349BA50025A159 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E528349BA50025A159 /* EducationTableViewCell.swift */; };
+		3CBB373328349BA50025A159 /* SkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E628349BA50025A159 /* SkillTableViewCell.swift */; };
+		3CBB373428349BA50025A159 /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36E828349BA50025A159 /* ResumeViewController.swift */; };
+		3CBB373528349BA50025A159 /* SkillListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36EB28349BA50025A159 /* SkillListView.xib */; };
+		3CBB373628349BA50025A159 /* SkillView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36EC28349BA50025A159 /* SkillView.xib */; };
+		3CBB373728349BA50025A159 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36EE28349BA50025A159 /* SkillView.swift */; };
+		3CBB373828349BA50025A159 /* SkillListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36F028349BA50025A159 /* SkillListViewController.swift */; };
+		3CBB373928349BA50025A159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36F328349BA50025A159 /* Main.storyboard */; };
+		3CBB373A28349BA50025A159 /* UserDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36F628349BA50025A159 /* UserDataTableViewCell.swift */; };
+		3CBB373B28349BA50025A159 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36F828349BA50025A159 /* MainViewController.swift */; };
+		3CBB373C28349BA50025A159 /* EducationListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36FB28349BA50025A159 /* EducationListView.xib */; };
+		3CBB373D28349BA50025A159 /* EducationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36FC28349BA50025A159 /* EducationView.xib */; };
+		3CBB373E28349BA50025A159 /* AddEducationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB36FD28349BA50025A159 /* AddEducationView.xib */; };
+		3CBB373F28349BA50025A159 /* EducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB36FF28349BA50025A159 /* EducationView.swift */; };
+		3CBB374028349BA50025A159 /* AddEducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370128349BA50025A159 /* AddEducationViewController.swift */; };
+		3CBB374128349BA50025A159 /* EducationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370228349BA50025A159 /* EducationListViewController.swift */; };
+		3CBB374228349BA50025A159 /* WorkSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB370528349BA50025A159 /* WorkSummaryView.xib */; };
+		3CBB374328349BA50025A159 /* WorkSummaryListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB370628349BA50025A159 /* WorkSummaryListView.xib */; };
+		3CBB374428349BA50025A159 /* AddWorkSummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBB370728349BA50025A159 /* AddWorkSummaryView.xib */; };
+		3CBB374528349BA50025A159 /* WorkSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370928349BA50025A159 /* WorkSummaryView.swift */; };
+		3CBB374628349BA50025A159 /* WorkSummaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370B28349BA50025A159 /* WorkSummaryListViewController.swift */; };
+		3CBB374728349BA50025A159 /* AddWorkSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370C28349BA50025A159 /* AddWorkSummaryViewController.swift */; };
+		3CBB374828349BA50025A159 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370E28349BA50025A159 /* UIView+Extension.swift */; };
+		3CBB374928349BA50025A159 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB370F28349BA50025A159 /* UIImage+Extension.swift */; };
+		3CBB374A28349BA50025A159 /* List+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB371028349BA50025A159 /* List+Extension.swift */; };
+		3CBB374B28349BA50025A159 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB371128349BA50025A159 /* UITableView+Extension.swift */; };
+		3CBB374C28349BA50025A159 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB371228349BA50025A159 /* Array+Extension.swift */; };
+		3CBB374E2834D2810025A159 /* ResumeViewModelImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBB374D2834D2810025A159 /* ResumeViewModelImplementation.swift */; };
+		C1A0B6E203B8A34F68F6E579 /* Pods_IOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2868CDBDF4D8E0B76A359ED5 /* Pods_IOSTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2868CDBDF4D8E0B76A359ED5 /* Pods_IOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB3697283499580025A159 /* IOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBB36AF28349BA40025A159 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CBB36B028349BA40025A159 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CBB36B228349BA40025A159 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		3CBB36B428349BA40025A159 /* ResumeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeViewModel.swift; sourceTree = "<group>"; };
+		3CBB36B728349BA40025A159 /* ResumeRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeRepository.swift; sourceTree = "<group>"; };
+		3CBB36B928349BA40025A159 /* EducationDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationDetail.swift; sourceTree = "<group>"; };
+		3CBB36BA28349BA40025A159 /* WorkSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSummary.swift; sourceTree = "<group>"; };
+		3CBB36BB28349BA40025A159 /* ProjectDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetail.swift; sourceTree = "<group>"; };
+		3CBB36BC28349BA40025A159 /* PersonalDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
+		3CBB36BF28349BA40025A159 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3CBB36C028349BA40025A159 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3CBB36C228349BA40025A159 /* MediaHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaHandler.swift; sourceTree = "<group>"; };
+		3CBB36C328349BA40025A159 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		3CBB36C428349BA40025A159 /* GlobalFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunction.swift; sourceTree = "<group>"; };
+		3CBB36C528349BA40025A159 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		3CBB36C928349BA40025A159 /* PersonalInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalInfoView.xib; sourceTree = "<group>"; };
+		3CBB36CB28349BA40025A159 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		3CBB36CE28349BA40025A159 /* AddResume.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddResume.storyboard; sourceTree = "<group>"; };
+		3CBB36D028349BA40025A159 /* AddResumePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddResumePageViewController.swift; sourceTree = "<group>"; };
+		3CBB36D328349BA40025A159 /* ProjectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectView.xib; sourceTree = "<group>"; };
+		3CBB36D428349BA40025A159 /* ProjectListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectListView.xib; sourceTree = "<group>"; };
+		3CBB36D528349BA40025A159 /* AddProjectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddProjectView.xib; sourceTree = "<group>"; };
+		3CBB36D728349BA40025A159 /* ProjectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		3CBB36D928349BA40025A159 /* AddProjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProjectViewController.swift; sourceTree = "<group>"; };
+		3CBB36DA28349BA40025A159 /* ProjectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		3CBB36DD28349BA40025A159 /* ResumeHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResumeHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		3CBB36DF28349BA40025A159 /* ResumeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResumeView.storyboard; sourceTree = "<group>"; };
+		3CBB36E128349BA50025A159 /* ProjectDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDetailTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E228349BA50025A159 /* ResumeHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E328349BA50025A159 /* PersonalInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E428349BA50025A159 /* WorkSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E528349BA50025A159 /* EducationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E628349BA50025A159 /* SkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36E828349BA50025A159 /* ResumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
+		3CBB36EB28349BA50025A159 /* SkillListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillListView.xib; sourceTree = "<group>"; };
+		3CBB36EC28349BA50025A159 /* SkillView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SkillView.xib; sourceTree = "<group>"; };
+		3CBB36EE28349BA50025A159 /* SkillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
+		3CBB36F028349BA50025A159 /* SkillListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillListViewController.swift; sourceTree = "<group>"; };
+		3CBB36F428349BA50025A159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3CBB36F628349BA50025A159 /* UserDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataTableViewCell.swift; sourceTree = "<group>"; };
+		3CBB36F828349BA50025A159 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3CBB36FB28349BA50025A159 /* EducationListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationListView.xib; sourceTree = "<group>"; };
+		3CBB36FC28349BA50025A159 /* EducationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EducationView.xib; sourceTree = "<group>"; };
+		3CBB36FD28349BA50025A159 /* AddEducationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEducationView.xib; sourceTree = "<group>"; };
+		3CBB36FF28349BA50025A159 /* EducationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationView.swift; sourceTree = "<group>"; };
+		3CBB370128349BA50025A159 /* AddEducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEducationViewController.swift; sourceTree = "<group>"; };
+		3CBB370228349BA50025A159 /* EducationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationListViewController.swift; sourceTree = "<group>"; };
+		3CBB370528349BA50025A159 /* WorkSummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkSummaryView.xib; sourceTree = "<group>"; };
+		3CBB370628349BA50025A159 /* WorkSummaryListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkSummaryListView.xib; sourceTree = "<group>"; };
+		3CBB370728349BA50025A159 /* AddWorkSummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddWorkSummaryView.xib; sourceTree = "<group>"; };
+		3CBB370928349BA50025A159 /* WorkSummaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSummaryView.swift; sourceTree = "<group>"; };
+		3CBB370B28349BA50025A159 /* WorkSummaryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkSummaryListViewController.swift; sourceTree = "<group>"; };
+		3CBB370C28349BA50025A159 /* AddWorkSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWorkSummaryViewController.swift; sourceTree = "<group>"; };
+		3CBB370E28349BA50025A159 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3CBB370F28349BA50025A159 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		3CBB371028349BA50025A159 /* List+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+Extension.swift"; sourceTree = "<group>"; };
+		3CBB371128349BA50025A159 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3CBB371228349BA50025A159 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		3CBB374D2834D2810025A159 /* ResumeViewModelImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewModelImplementation.swift; sourceTree = "<group>"; };
+		A041E085080E49DE30AEDCBE /* Pods-IOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTest.release.xcconfig"; path = "Target Support Files/Pods-IOSTest/Pods-IOSTest.release.xcconfig"; sourceTree = "<group>"; };
+		E9397D594DA89E9585395A2B /* Pods-IOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTest.debug.xcconfig"; path = "Target Support Files/Pods-IOSTest/Pods-IOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CBB3694283499580025A159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1A0B6E203B8A34F68F6E579 /* Pods_IOSTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CBB368E283499580025A159 = {
+			isa = PBXGroup;
+			children = (
+				3CBB3699283499580025A159 /* IOSTest */,
+				3CBB3698283499580025A159 /* Products */,
+				9A1987369C97252D9212B4F8 /* Pods */,
+				6B41D42FD4406D417CA55834 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3CBB3698283499580025A159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB3697283499580025A159 /* IOSTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CBB3699283499580025A159 /* IOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36BE28349BA40025A159 /* Application */,
+				3CBB36BD28349BA40025A159 /* Base.lproj */,
+				3CBB36B128349BA40025A159 /* CustomView */,
+				3CBB36B528349BA40025A159 /* Data */,
+				3CBB370D28349BA50025A159 /* Extension */,
+				3CBB36AE28349BA40025A159 /* SupportFiles */,
+				3CBB36C128349BA40025A159 /* Utils */,
+				3CBB36C628349BA40025A159 /* View */,
+				3CBB36B328349BA40025A159 /* ViewModel */,
+			);
+			path = IOSTest;
+			sourceTree = "<group>";
+		};
+		3CBB36AE28349BA40025A159 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36AF28349BA40025A159 /* Assets.xcassets */,
+				3CBB36B028349BA40025A159 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		3CBB36B128349BA40025A159 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36B228349BA40025A159 /* UnderlinedTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3CBB36B328349BA40025A159 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36B428349BA40025A159 /* ResumeViewModel.swift */,
+				3CBB374D2834D2810025A159 /* ResumeViewModelImplementation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3CBB36B528349BA40025A159 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36B628349BA40025A159 /* Repository */,
+				3CBB36B828349BA40025A159 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3CBB36B628349BA40025A159 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36B728349BA40025A159 /* ResumeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3CBB36B828349BA40025A159 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36B928349BA40025A159 /* EducationDetail.swift */,
+				3CBB36BA28349BA40025A159 /* WorkSummary.swift */,
+				3CBB36BB28349BA40025A159 /* ProjectDetail.swift */,
+				3CBB36BC28349BA40025A159 /* PersonalDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CBB36BD28349BA40025A159 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		3CBB36BE28349BA40025A159 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36BF28349BA40025A159 /* AppDelegate.swift */,
+				3CBB36C028349BA40025A159 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3CBB36C128349BA40025A159 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36C228349BA40025A159 /* MediaHandler.swift */,
+				3CBB36C328349BA40025A159 /* Observable.swift */,
+				3CBB36C428349BA40025A159 /* GlobalFunction.swift */,
+				3CBB36C528349BA40025A159 /* DatabaseManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3CBB36C628349BA40025A159 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36C728349BA40025A159 /* Personal Info */,
+				3CBB36CC28349BA40025A159 /* Add Resume */,
+				3CBB36D128349BA40025A159 /* Projects */,
+				3CBB36DB28349BA40025A159 /* Resume */,
+				3CBB36E928349BA50025A159 /* Skills */,
+				3CBB36F128349BA50025A159 /* Main */,
+				3CBB36F928349BA50025A159 /* Educations */,
+				3CBB370328349BA50025A159 /* Work Summary */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CBB36C728349BA40025A159 /* Personal Info */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36C828349BA40025A159 /* Xib */,
+				3CBB36CA28349BA40025A159 /* ViewController */,
+			);
+			path = "Personal Info";
+			sourceTree = "<group>";
+		};
+		3CBB36C828349BA40025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36C928349BA40025A159 /* PersonalInfoView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB36CA28349BA40025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36CB28349BA40025A159 /* PersonalInfoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36CC28349BA40025A159 /* Add Resume */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36CD28349BA40025A159 /* StoryBoard */,
+				3CBB36CF28349BA40025A159 /* ViewController */,
+			);
+			path = "Add Resume";
+			sourceTree = "<group>";
+		};
+		3CBB36CD28349BA40025A159 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36CE28349BA40025A159 /* AddResume.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3CBB36CF28349BA40025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36D028349BA40025A159 /* AddResumePageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36D128349BA40025A159 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36D228349BA40025A159 /* Xib */,
+				3CBB36D628349BA40025A159 /* ItemView */,
+				3CBB36D828349BA40025A159 /* ViewController */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		3CBB36D228349BA40025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36D328349BA40025A159 /* ProjectView.xib */,
+				3CBB36D428349BA40025A159 /* ProjectListView.xib */,
+				3CBB36D528349BA40025A159 /* AddProjectView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB36D628349BA40025A159 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36D728349BA40025A159 /* ProjectView.swift */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		3CBB36D828349BA40025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36D928349BA40025A159 /* AddProjectViewController.swift */,
+				3CBB36DA28349BA40025A159 /* ProjectListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36DB28349BA40025A159 /* Resume */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36DC28349BA40025A159 /* Xib */,
+				3CBB36DE28349BA40025A159 /* StoryBoard */,
+				3CBB36E028349BA50025A159 /* Cell */,
+				3CBB36E728349BA50025A159 /* ViewController */,
+			);
+			path = Resume;
+			sourceTree = "<group>";
+		};
+		3CBB36DC28349BA40025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36DD28349BA40025A159 /* ResumeHeaderTableViewCell.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB36DE28349BA40025A159 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36DF28349BA40025A159 /* ResumeView.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3CBB36E028349BA50025A159 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36E128349BA50025A159 /* ProjectDetailTableViewCell.swift */,
+				3CBB36E228349BA50025A159 /* ResumeHeaderTableViewCell.swift */,
+				3CBB36E328349BA50025A159 /* PersonalInfoTableViewCell.swift */,
+				3CBB36E428349BA50025A159 /* WorkSummaryTableViewCell.swift */,
+				3CBB36E528349BA50025A159 /* EducationTableViewCell.swift */,
+				3CBB36E628349BA50025A159 /* SkillTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3CBB36E728349BA50025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36E828349BA50025A159 /* ResumeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36E928349BA50025A159 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36EA28349BA50025A159 /* Xib */,
+				3CBB36ED28349BA50025A159 /* ItemView */,
+				3CBB36EF28349BA50025A159 /* ViewController */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		3CBB36EA28349BA50025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36EB28349BA50025A159 /* SkillListView.xib */,
+				3CBB36EC28349BA50025A159 /* SkillView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB36ED28349BA50025A159 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36EE28349BA50025A159 /* SkillView.swift */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		3CBB36EF28349BA50025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36F028349BA50025A159 /* SkillListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36F128349BA50025A159 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36F228349BA50025A159 /* StoryBoard */,
+				3CBB36F528349BA50025A159 /* Cell */,
+				3CBB36F728349BA50025A159 /* ViewController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3CBB36F228349BA50025A159 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36F328349BA50025A159 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3CBB36F528349BA50025A159 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36F628349BA50025A159 /* UserDataTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3CBB36F728349BA50025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36F828349BA50025A159 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB36F928349BA50025A159 /* Educations */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36FA28349BA50025A159 /* Xib */,
+				3CBB36FE28349BA50025A159 /* ItemView */,
+				3CBB370028349BA50025A159 /* ViewController */,
+			);
+			path = Educations;
+			sourceTree = "<group>";
+		};
+		3CBB36FA28349BA50025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36FB28349BA50025A159 /* EducationListView.xib */,
+				3CBB36FC28349BA50025A159 /* EducationView.xib */,
+				3CBB36FD28349BA50025A159 /* AddEducationView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB36FE28349BA50025A159 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB36FF28349BA50025A159 /* EducationView.swift */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		3CBB370028349BA50025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370128349BA50025A159 /* AddEducationViewController.swift */,
+				3CBB370228349BA50025A159 /* EducationListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB370328349BA50025A159 /* Work Summary */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370428349BA50025A159 /* Xib */,
+				3CBB370828349BA50025A159 /* ItemView */,
+				3CBB370A28349BA50025A159 /* ViewController */,
+			);
+			path = "Work Summary";
+			sourceTree = "<group>";
+		};
+		3CBB370428349BA50025A159 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370528349BA50025A159 /* WorkSummaryView.xib */,
+				3CBB370628349BA50025A159 /* WorkSummaryListView.xib */,
+				3CBB370728349BA50025A159 /* AddWorkSummaryView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		3CBB370828349BA50025A159 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370928349BA50025A159 /* WorkSummaryView.swift */,
+			);
+			path = ItemView;
+			sourceTree = "<group>";
+		};
+		3CBB370A28349BA50025A159 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370B28349BA50025A159 /* WorkSummaryListViewController.swift */,
+				3CBB370C28349BA50025A159 /* AddWorkSummaryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3CBB370D28349BA50025A159 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3CBB370E28349BA50025A159 /* UIView+Extension.swift */,
+				3CBB370F28349BA50025A159 /* UIImage+Extension.swift */,
+				3CBB371028349BA50025A159 /* List+Extension.swift */,
+				3CBB371128349BA50025A159 /* UITableView+Extension.swift */,
+				3CBB371228349BA50025A159 /* Array+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6B41D42FD4406D417CA55834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2868CDBDF4D8E0B76A359ED5 /* Pods_IOSTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A1987369C97252D9212B4F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9397D594DA89E9585395A2B /* Pods-IOSTest.debug.xcconfig */,
+				A041E085080E49DE30AEDCBE /* Pods-IOSTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CBB3696283499580025A159 /* IOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBB36AB2834995A0025A159 /* Build configuration list for PBXNativeTarget "IOSTest" */;
+			buildPhases = (
+				FCC7CC2EF2F377D9ADC82000 /* [CP] Check Pods Manifest.lock */,
+				3CBB3693283499580025A159 /* Sources */,
+				3CBB3694283499580025A159 /* Frameworks */,
+				3CBB3695283499580025A159 /* Resources */,
+				C2E4C1FB63F0EFDBBB5EF01A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSTest;
+			productName = IOSTest;
+			productReference = 3CBB3697283499580025A159 /* IOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CBB368F283499580025A159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3CBB3696283499580025A159 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3CBB3692283499580025A159 /* Build configuration list for PBXProject "IOSTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CBB368E283499580025A159;
+			productRefGroup = 3CBB3698283499580025A159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CBB3696283499580025A159 /* IOSTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CBB3695283499580025A159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB374228349BA50025A159 /* WorkSummaryView.xib in Resources */,
+				3CBB372D28349BA50025A159 /* ResumeView.storyboard in Resources */,
+				3CBB373528349BA50025A159 /* SkillListView.xib in Resources */,
+				3CBB374428349BA50025A159 /* AddWorkSummaryView.xib in Resources */,
+				3CBB373E28349BA50025A159 /* AddEducationView.xib in Resources */,
+				3CBB373D28349BA50025A159 /* EducationView.xib in Resources */,
+				3CBB373C28349BA50025A159 /* EducationListView.xib in Resources */,
+				3CBB373928349BA50025A159 /* Main.storyboard in Resources */,
+				3CBB372428349BA50025A159 /* AddResume.storyboard in Resources */,
+				3CBB373628349BA50025A159 /* SkillView.xib in Resources */,
+				3CBB372728349BA50025A159 /* ProjectListView.xib in Resources */,
+				3CBB372C28349BA50025A159 /* ResumeHeaderTableViewCell.xib in Resources */,
+				3CBB374328349BA50025A159 /* WorkSummaryListView.xib in Resources */,
+				3CBB372228349BA50025A159 /* PersonalInfoView.xib in Resources */,
+				3CBB371328349BA50025A159 /* Assets.xcassets in Resources */,
+				3CBB372828349BA50025A159 /* AddProjectView.xib in Resources */,
+				3CBB372628349BA50025A159 /* ProjectView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2E4C1FB63F0EFDBBB5EF01A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTest/Pods-IOSTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTest/Pods-IOSTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSTest/Pods-IOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCC7CC2EF2F377D9ADC82000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CBB3693283499580025A159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBB371F28349BA50025A159 /* Observable.swift in Sources */,
+				3CBB373828349BA50025A159 /* SkillListViewController.swift in Sources */,
+				3CBB371C28349BA50025A159 /* AppDelegate.swift in Sources */,
+				3CBB373728349BA50025A159 /* SkillView.swift in Sources */,
+				3CBB374728349BA50025A159 /* AddWorkSummaryViewController.swift in Sources */,
+				3CBB374628349BA50025A159 /* WorkSummaryListViewController.swift in Sources */,
+				3CBB372128349BA50025A159 /* DatabaseManager.swift in Sources */,
+				3CBB374A28349BA50025A159 /* List+Extension.swift in Sources */,
+				3CBB374528349BA50025A159 /* WorkSummaryView.swift in Sources */,
+				3CBB373028349BA50025A159 /* PersonalInfoTableViewCell.swift in Sources */,
+				3CBB371728349BA50025A159 /* ResumeRepository.swift in Sources */,
+				3CBB372328349BA50025A159 /* PersonalInfoViewController.swift in Sources */,
+				3CBB371D28349BA50025A159 /* SceneDelegate.swift in Sources */,
+				3CBB374028349BA50025A159 /* AddEducationViewController.swift in Sources */,
+				3CBB371E28349BA50025A159 /* MediaHandler.swift in Sources */,
+				3CBB371928349BA50025A159 /* WorkSummary.swift in Sources */,
+				3CBB373128349BA50025A159 /* WorkSummaryTableViewCell.swift in Sources */,
+				3CBB372B28349BA50025A159 /* ProjectListViewController.swift in Sources */,
+				3CBB373B28349BA50025A159 /* MainViewController.swift in Sources */,
+				3CBB371A28349BA50025A159 /* ProjectDetail.swift in Sources */,
+				3CBB373F28349BA50025A159 /* EducationView.swift in Sources */,
+				3CBB372528349BA50025A159 /* AddResumePageViewController.swift in Sources */,
+				3CBB373428349BA50025A159 /* ResumeViewController.swift in Sources */,
+				3CBB372F28349BA50025A159 /* ResumeHeaderTableViewCell.swift in Sources */,
+				3CBB371B28349BA50025A159 /* PersonalDetail.swift in Sources */,
+				3CBB371528349BA50025A159 /* UnderlinedTextField.swift in Sources */,
+				3CBB373228349BA50025A159 /* EducationTableViewCell.swift in Sources */,
+				3CBB372A28349BA50025A159 /* AddProjectViewController.swift in Sources */,
+				3CBB371628349BA50025A159 /* ResumeViewModel.swift in Sources */,
+				3CBB374128349BA50025A159 /* EducationListViewController.swift in Sources */,
+				3CBB373A28349BA50025A159 /* UserDataTableViewCell.swift in Sources */,
+				3CBB374C28349BA50025A159 /* Array+Extension.swift in Sources */,
+				3CBB374828349BA50025A159 /* UIView+Extension.swift in Sources */,
+				3CBB374E2834D2810025A159 /* ResumeViewModelImplementation.swift in Sources */,
+				3CBB374928349BA50025A159 /* UIImage+Extension.swift in Sources */,
+				3CBB372028349BA50025A159 /* GlobalFunction.swift in Sources */,
+				3CBB372928349BA50025A159 /* ProjectView.swift in Sources */,
+				3CBB373328349BA50025A159 /* SkillTableViewCell.swift in Sources */,
+				3CBB371828349BA50025A159 /* EducationDetail.swift in Sources */,
+				3CBB372E28349BA50025A159 /* ProjectDetailTableViewCell.swift in Sources */,
+				3CBB374B28349BA50025A159 /* UITableView+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3CBB36F328349BA50025A159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CBB36F428349BA50025A159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3CBB36A92834995A0025A159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CBB36AA2834995A0025A159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3CBB36AC2834995A0025A159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9397D594DA89E9585395A2B /* Pods-IOSTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6MGCM9A2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IOSTest/SupportFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CBB36AD2834995A0025A159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A041E085080E49DE30AEDCBE /* Pods-IOSTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6MGCM9A2G;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IOSTest/SupportFiles/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CBB3692283499580025A159 /* Build configuration list for PBXProject "IOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB36A92834995A0025A159 /* Debug */,
+				3CBB36AA2834995A0025A159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CBB36AB2834995A0025A159 /* Build configuration list for PBXNativeTarget "IOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBB36AC2834995A0025A159 /* Debug */,
+				3CBB36AD2834995A0025A159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CBB368F283499580025A159 /* Project object */;
+}

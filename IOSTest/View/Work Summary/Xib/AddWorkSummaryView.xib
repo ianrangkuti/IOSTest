@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWorkSummaryViewController" customModule="IOSTest" customModuleProvider="target">
+            <connections>
+                <outlet property="companyTextField" destination="8F6-k7-o66" id="zaJ-jY-Dw6"/>
+                <outlet property="saveButton" destination="Zbz-Ue-iFR" id="ruv-xP-Yey"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Yyp-a9-OUd"/>
+                <outlet property="workDurationTextField" destination="ooh-a3-FA7" id="pby-jd-1uz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Work Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdu-bT-bCH">
+                    <rect key="frame" x="20" y="64" width="374" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAX-it-q3h">
+                    <rect key="frame" x="20" y="108" width="374" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex: CT.Corp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8F6-k7-o66" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                    <rect key="frame" x="20" y="137.5" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employment Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YC2-Qe-Eg8">
+                    <rect key="frame" x="20" y="188.5" width="374" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex: 3 Years and 2 month" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooh-a3-FA7" customClass="UnderlinedTextField" customModule="IOSTest" customModuleProvider="target">
+                    <rect key="frame" x="20" y="218" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbz-Ue-iFR">
+                    <rect key="frame" x="95" y="269" width="224" height="32"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveButtonTapped:" destination="-1" eventType="touchUpInside" id="mqt-5a-HiG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="8F6-k7-o66" firstAttribute="top" secondItem="LAX-it-q3h" secondAttribute="bottom" constant="10" id="3Oj-TH-ycf"/>
+                <constraint firstItem="Xdu-bT-bCH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="6Ch-tK-BRV"/>
+                <constraint firstItem="Zbz-Ue-iFR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:4" id="77o-XW-gDV"/>
+                <constraint firstItem="ooh-a3-FA7" firstAttribute="top" secondItem="YC2-Qe-Eg8" secondAttribute="bottom" constant="10" id="AAL-uu-YBl"/>
+                <constraint firstItem="8F6-k7-o66" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="F4g-wY-wK6"/>
+                <constraint firstItem="YC2-Qe-Eg8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MUu-21-2aW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YC2-Qe-Eg8" secondAttribute="trailing" constant="20" id="Nx8-AK-tqu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8F6-k7-o66" secondAttribute="trailing" constant="20" id="PRe-Uc-Vkb"/>
+                <constraint firstItem="LAX-it-q3h" firstAttribute="top" secondItem="Xdu-bT-bCH" secondAttribute="bottom" constant="20" id="ViI-Ml-ejf"/>
+                <constraint firstItem="YC2-Qe-Eg8" firstAttribute="top" secondItem="8F6-k7-o66" secondAttribute="bottom" constant="30" id="bIN-Dl-ayO"/>
+                <constraint firstItem="Zbz-Ue-iFR" firstAttribute="top" secondItem="ooh-a3-FA7" secondAttribute="bottom" constant="30" id="dPs-zf-om3"/>
+                <constraint firstItem="LAX-it-q3h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="hMY-pi-YQX"/>
+                <constraint firstItem="Zbz-Ue-iFR" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="icX-HO-SzB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xdu-bT-bCH" secondAttribute="trailing" constant="20" id="sSr-hE-6UM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ooh-a3-FA7" secondAttribute="trailing" constant="20" id="tfj-1P-R3J"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LAX-it-q3h" secondAttribute="trailing" constant="20" id="udD-vB-eMj"/>
+                <constraint firstItem="Xdu-bT-bCH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vgW-qX-riQ"/>
+                <constraint firstItem="ooh-a3-FA7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="zw3-yA-1q0"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="62"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
