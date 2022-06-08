@@ -8,7 +8,6 @@
 import Foundation
 
 protocol ResumeViewModel {
-  var personalDetail: PersonalDetail { get }
   var pagePosition : Observable<Int> { get }
   var submitResponse : Observable<SaveStatus> { get }
   var isSubmitOnProgress: Observable<Bool> { get }
